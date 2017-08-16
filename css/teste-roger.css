@@ -1,0 +1,293 @@
+@charset "UTF-8";
+<style type="text/css">
+
+    /* Light */
+    @font-face {
+        font-family: "Roboto Light";
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: "Roboto Light Italic";
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    /* Normal */
+    @font-face {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Roboto Medium";
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Roboto Bold";
+        font-style: normal;
+        font-weight: 700;
+    }
+
+	html {
+		height: 100%;
+        width: 100%;
+		margin: 0;
+		padding: 0;
+    }
+
+    body {
+    	height: 100%;
+        width: 100%;
+    	margin: 0;
+    	padding: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-family: Roboto;
+
+    }
+
+    header {
+    	display: block;
+    	height: 30px;
+    	padding: 15px 20px;
+    	background-color: #FFFFFF;
+    	margin: 0;
+        z-index: 1;
+    }
+
+    header, 
+    footer, 
+    .sidebar-container, 
+    tbody .documents-row, 
+    button {
+        box-shadow: 0.5px 0.5px 0.5px 1px #DCDEE1;
+    }
+
+    .logo-full {
+        float: left;
+        height: 30px;
+        width: 115px;
+
+    }
+
+    ul {
+        list-style: inside disc;
+
+    }
+
+    .header-toolbar {
+        float: right;
+        margin: 0;
+    }
+
+    ul li {
+        list-style: none;    
+        margin-left: 20px;
+        display: inline;
+    }
+
+
+    .header-light-bulb {
+        background-image: url(file:///Users/RogersonSiqueira/Documents/STORYTOUCH/Design/%20tk%20-%20pacote%20gra%CC%81fico/_icones_valendo/svg/_header/light/lamp_light_01.svg);
+    }
+
+    .header-light-help{
+        background-image: url(file:///Users/RogersonSiqueira/Documents/STORYTOUCH/Design/%20tk%20-%20pacote%20gra%CC%81fico/_icones_valendo/svg/_header/light/help_light_01.svg);
+
+    }
+
+    .header-light-library {
+        background-image: url(file:///Users/RogersonSiqueira/Documents/STORYTOUCH/Design/%20tk%20-%20pacote%20gra%CC%81fico/_icones_valendo/svg/_header/light/library_light_01.svg);
+    }
+
+    .header-light-hamburguer {
+        background-image: url(file:///Users/RogersonSiqueira/Documents/STORYTOUCH/Design/%20tk%20-%20pacote%20gra%CC%81fico/_icones_valendo/svg/_header/light/hamburguer_light_01.svg);
+    }
+
+    button {
+        position: relative;
+        background-position: 50% 50%;
+        border: none;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+
+    ul li .user-main-menu {
+        display: inline-block;
+        border-radius: 100%;
+        border: solid 1px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        vertical-align: top;
+        color: #808286;
+        font-size: 13px;
+    }
+
+    .background-container {
+        display: block;
+        background-color: #F9F9F9;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        bottom: 60px;
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    .sidebar-container {
+        float: left;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 75px;
+        bottom: 75px;
+        width: 210px;
+    }
+
+    .sidebar-tabs {
+        float: left;
+        position: relative;
+        line-height: 30px;
+        padding-left: 10px;
+        border-bottom: 1px solid #eeeeee;
+        width: 200px;
+        display: block;
+        z-index: 1;
+    }
+
+    .icon-info {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/info_light_01.svg);
+    }
+
+    .icon-info:hover {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/info_light_02.svg);
+    }
+
+    .icon-info:active {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/info_light_03.svg);
+    }
+
+    .icon-info {
+        position: relative;
+        z-index: 1;
+        line-height: 15px;
+        padding: 15px;
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-position-y: 8px;
+        width: 30px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-container {
+        max-width: 100%; 
+        position: relative;
+        margin-left: 230px;
+    }
+
+    .first-row-container {
+        
+    }
+
+    .documents-table {
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        padding-top: 5px;
+    }
+
+    .table-header {
+        line-height: 30px;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-weight: 300;
+        color: #808286;
+    }
+
+    tbody .documents-row {
+        background-color: white;
+        line-height: 30px;
+     }
+
+    .separator-line tr td hr{
+        border: 0;
+        border-top: solid 1px red;
+    } 
+
+    .number-column, 
+    .documents-number {
+        padding-left: 20px;
+    }
+
+    .button-with-tooltip.add-document-button,
+    .button-with-tooltip.import-document-button,
+    .button-with-tooltip.add-folder-button {
+        height: 30px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .button-with-tooltip.add-document-button {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzgwODI4NiIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
+    }
+
+    .button-with-tooltip.add-document-button:hover {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newdoc_light_02.svg);
+    }
+
+    .button-with-tooltip.add-document-button:active {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzE5QkJEQSIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
+    }
+
+    .button-with-tooltip.import-document-button {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_01.svg);
+    }
+
+    .button-with-tooltip.import-document-button:hover {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_02.svg);
+    }
+
+    .button-with-tooltip.import-document-button:active {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_03.svg);
+    }
+
+    .button-with-tooltip.add-folder-button {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_01.svg);
+    }
+
+    .button-with-tooltip.add-folder-button:hover {
+    background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_02.svg);
+    }
+
+    .button-with-tooltip.add-folder-button:active {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_03.svg);
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        position: fixed;
+        height: 30px;
+        padding: 15px 20px;
+        background-color: #FFFFFF;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+</style>
