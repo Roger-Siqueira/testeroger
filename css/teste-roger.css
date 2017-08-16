@@ -34,6 +34,7 @@
     tbody .documents-row, 
     button {
         box-shadow: 0.5px 0.5px 0.5px 1px #DCDEE1;
+        background-color: #fff;
     }
 
     .logo-full {
@@ -75,14 +76,23 @@
     }
 
     button {
-        position: relative;
         background-position: 50% 50%;
         border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+
+    .header-light-bulb,
+    .header-light-help,
+    .header-light-library,
+    .header-light-hamburguer,
+    .add-document-button,
+    .import-document-button,
+    .add-folder-button {
+        position: relative;
         width: 30px;
         height: 30px;
         line-height: 30px;
-        cursor: pointer;
-        background-repeat: no-repeat;
     }
 
     ul li .user-main-menu {
@@ -96,6 +106,7 @@
         vertical-align: top;
         color: #808286;
         font-size: 13px;
+        margin-left: 10px;
     }
 
     .background-container {
@@ -161,6 +172,80 @@
         margin-left: 230px;
     }
 
+    .first-row-container {
+        display: inline;
+    }
+
+    .button-with-tooltip.add-document-button,
+    .button-with-tooltip.import-document-button,
+    .button-with-tooltip.add-folder-button {
+        height: 30px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .button-with-tooltip.add-document-button {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzgwODI4NiIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
+    }
+
+    .button-with-tooltip.add-document-button:hover {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newdoc_light_02.svg);
+    }
+
+    .button-with-tooltip.add-document-button:active {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzE5QkJEQSIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
+    }
+
+    .button-with-tooltip.import-document-button {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_01.svg);
+    }
+
+    .button-with-tooltip.import-document-button:hover {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_02.svg);
+    }
+
+    .button-with-tooltip.import-document-button:active {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_03.svg);
+    }
+
+    .button-with-tooltip.add-folder-button {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_01.svg);
+    }
+
+    .button-with-tooltip.add-folder-button:hover {
+    background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_02.svg);
+    }
+
+    .button-with-tooltip.add-folder-button:active {
+        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_03.svg);
+    }
+
+    .columns-filter {
+        position: relative;
+        float: right;
+        height: 30px;
+        width: 150px;
+        display: inline-block;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .columns-filter span {
+        font-size: 14px;
+        font-family: Roboto-Light;
+        position: relative;
+        color: #64666A;
+    }
+
+    .dropdown-caret {
+        background-image: url(file:///Users/RogersonSiqueira/Documents/test-git/testeroger/images/dropdown.svg);
+        background-repeat: no-repeat;
+        float: right;
+        height: 5px;
+        width: 8px;
+        margin-top: 5px;
+    }
+
     .documents-table {
         margin: 0;
         text-align: left;
@@ -211,7 +296,6 @@
         font-family: Roboto-Light;
     }
 
-
     #separator-line {
         background-color: #DCDEE1;
         height: 1px;
@@ -221,55 +305,9 @@
         padding: 0;
     } 
 
-
-
     .number-column, 
     .documents-number {
         padding-left: 20px;
-    }
-
-    .button-with-tooltip.add-document-button,
-    .button-with-tooltip.import-document-button,
-    .button-with-tooltip.add-folder-button {
-        height: 30px;
-        position: relative;
-        margin-right: 20px;
-    }
-
-    .button-with-tooltip.add-document-button {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzgwODI4NiIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
-    }
-
-    .button-with-tooltip.add-document-button:hover {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newdoc_light_02.svg);
-    }
-
-    .button-with-tooltip.add-document-button:active {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE1LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIzMHB4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMzAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cmVjdCB4PSIwLjAyMiIgeT0iMC4wMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzMC4wMDEiIGhlaWdodD0iMzAiLz4KPGcgaWQ9Im5vdm9fMl8iPgoJPHBhdGggZmlsbD0iIzE5QkJEQSIgZD0iTTIxLjM3OSwzLjY3NGMtMS43NTYsMC0zLjMyMiwwLjgxMS00LjM0OCwyLjA3NWgtNS4yNDdMNy45MzIsOS42MzJsMC4wMDEsMC4wMDJMNy45MjEsOS42NDV2MTUuNzkxaDE0LjM2CgkJVjE0Ljc5MWMyLjY2Mi0wLjQzMiw0LjY5NS0yLjczNSw0LjY5NS01LjUyQzI2Ljk3Nyw2LjE4LDI0LjQ3MSwzLjY3NCwyMS4zNzksMy42NzR6IE0xMS45MDgsNi45N3YyLjc2Nkg5LjE0MkwxMS45MDgsNi45N3oKCQkgTTIxLjI4MywyNC40MzZIOC45MjFWMTAuNjFoMy44NlY2Ljc1aDMuNjA1Yy0wLjM4NSwwLjc1OC0wLjYwNiwxLjYxNC0wLjYwNiwyLjUyMWMwLDMuMDYsMi40NTYsNS41NDEsNS41MDIsNS41OTRWMjQuNDM2egoJCSBNMjQuOTgyLDguNTkxVjkuNTloLTMuMDJ2My4wMThoLTFWOS41OWgtMy4wMTh2LTFoMy4wMThWNS41NzNoMVY4LjU5TDI0Ljk4Miw4LjU5MUwyNC45ODIsOC41OTF6Ii8%2BCjwvZz4KPC9zdmc%2BCg%3D%3D);
-    }
-
-    .button-with-tooltip.import-document-button {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_01.svg);
-    }
-
-    .button-with-tooltip.import-document-button:hover {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_02.svg);
-    }
-
-    .button-with-tooltip.import-document-button:active {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/import_light_03.svg);
-    }
-
-    .button-with-tooltip.add-folder-button {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_01.svg);
-    }
-
-    .button-with-tooltip.add-folder-button:hover {
-    background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_02.svg);
-    }
-
-    .button-with-tooltip.add-folder-button:active {
-        background-image: url(file:///Users/RogersonSiqueira/Desktop/HTML_CSS/teste_files/images/newfolder_light_03.svg);
     }
 
     footer {
