@@ -1,38 +1,6 @@
 @charset "UTF-8";
 <style type="text/css">
 
-    /* Light */
-    @font-face {
-        font-family: "Roboto Light";
-        font-style: normal;
-        font-weight: 300;
-    }
-
-    @font-face {
-        font-family: "Roboto Light Italic";
-        font-style: italic;
-        font-weight: 300;
-    }
-
-    /* Normal */
-    @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-    }
-
-    @font-face {
-        font-family: "Roboto Medium";
-        font-style: normal;
-        font-weight: 500;
-    }
-
-    @font-face {
-        font-family: "Roboto Bold";
-        font-style: normal;
-        font-weight: 700;
-    }
-
 	html {
 		height: 100%;
         width: 100%;
@@ -72,12 +40,10 @@
         float: left;
         height: 30px;
         width: 115px;
-
     }
 
     ul {
         list-style: inside disc;
-
     }
 
     .header-toolbar {
@@ -98,7 +64,6 @@
 
     .header-light-help{
         background-image: url(file:///Users/RogersonSiqueira/Documents/STORYTOUCH/Design/%20tk%20-%20pacote%20gra%CC%81fico/_icones_valendo/svg/_header/light/help_light_01.svg);
-
     }
 
     .header-light-library {
@@ -196,38 +161,67 @@
         margin-left: 230px;
     }
 
-    .first-row-container {
-        
-    }
-
     .documents-table {
         margin: 0;
         text-align: left;
         width: 100%;
         max-width: 100%;
-        border-collapse: separate;
         border-spacing: 0 10px;
         padding-top: 5px;
+    }
+
+    table thead th {
+        font-weight: normal;
+
     }
 
     .table-header {
         line-height: 30px;
         font-size: 11px;
         text-transform: uppercase;
-        font-family: Roboto;
-        font-weight: 300;
+        font-family: Roboto-Light;
         color: #808286;
+        font-weight: normal;
     }
 
     tbody .documents-row {
         background-color: white;
         line-height: 30px;
+    }
+
+     tbody tr td {
+        color: #64666A;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 13px;
      }
 
-    .separator-line tr td hr{
+     .documents-title {
+        text-transform: uppercase;
+     }
+
+    .documents-number, 
+    .documents-kind, 
+    .documents-version, 
+    .documents-admin, 
+    .documents-creation,
+    .documents-deadline,
+    .documents-ps,
+    .documents-notifications {
+        font-family: Roboto-Light;
+    }
+
+
+    #separator-line {
+        background-color: #DCDEE1;
+        height: 1px;
         border: 0;
-        border-top: solid 1px red;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0;
     } 
+
+
 
     .number-column, 
     .documents-number {
